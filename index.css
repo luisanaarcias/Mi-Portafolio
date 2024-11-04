@@ -1,0 +1,138 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+}
+body, h1, h2, h3,p {
+    margin: 0;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    background-image: url('pastel.avif');
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+
+#titulo {
+font-size: 2rem;
+text-align: center;
+margin-top: 1.5rem;
+
+}
+#subtitulo {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    color: black;
+}
+
+.iconos {
+    display: flex;
+    flex-direction: row;
+    gap: 1.4rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+#icon {
+    width: 10rem;
+    height: 10rem;
+}
+#informacion {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contenedor-repositorios {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 80rem;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#contenedor-repositorio {
+    padding: 0;
+    margin: 0 auto;
+}
+.lista {
+    width: 8rem;
+    height: 8rem;
+}
+.repositorio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.segundo-repositorio {
+    display: flex;
+    flex-direction: column-reverse;
+   
+align-items: center;
+}
+.descripcion {
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+.titulo-repositorio {
+    font-size: 1.5rem;
+    
+}
+.carrito {
+    width: 8rem;
+    height: 8rem;
+    
+}
+.primer-repositorio {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.primera-descripcion {
+    font-family: cursive;
+    font-size: 1.2rem;
+}
+
+#segundo-titulo {
+    font-size: 2.5rem;
+    display: flex;
+  text-align: center;
+   color:  #535eac;
+   justify-content: center;
+}
+
+@media (min-width: 768px) {
+    #contenedor-repositorios {
+        flex-direction: row;
+        text-align: center;
+        gap: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .repositorio {
+        height: 30rem;
+        width: 40%;
+    }
+
+    .titulo-repositorio {
+        height: 15%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .repositorio {
+        width: 30%;
+    }
+}
